@@ -41,7 +41,7 @@ handle authentication, query parameters, form parameters, and path parameters in
 - [JDK 21](https://www.oracle.com/java/technologies/downloads/)
 - [Maven](https://maven.apache.org/download.cgi)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
-- [Allure Commandline](https://docs.qameta.io/allure/#_installing_a_commandline)
+- [Allure Commandline](https://allurereport.org/docs/install/)
 
 You can copy the project `pom.xml` file that already has all the dependencies.
 

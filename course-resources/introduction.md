@@ -4,13 +4,13 @@
 
 - [What is an API?](#what-is-an-api)
 - [What does REST stand for?](#what-does-rest-stand-for)
-  - [Resource-Based](#resource-based)
-  - [Standard Methods](#standard-methods)
-  - [Stateless](#stateless)
-  - [Use of URLs](#use-of-urls)
-  - [Client-Server Architecture](#client-server-architecture)
-  - [Representation](#representation)
-  - [Stateless Operations](#stateless-operations)
+    - [Resource-Based](#resource-based)
+    - [Standard Methods](#standard-methods)
+    - [Stateless](#stateless)
+    - [Use of URLs](#use-of-urls)
+    - [Client-Server Architecture](#client-server-architecture)
+    - [Representation](#representation)
+    - [Stateless Operations](#stateless-operations)
 - [Why the Term "RESTful"?](#why-the-term-restful)
 - [API in Simple Terms](#api-in-simple-terms)
 - [Key Points](#key-points)
@@ -26,7 +26,8 @@ APIs are typically accessed through `HTTP` requests and responses, following for
 
 ## What does REST stand for?
 
-REST (Representational State Transfer) is a simple way to structure communication between systems on the web. Here’s a straightforward explanation:
+REST (Representational State Transfer) is a simple way to structure communication between systems on the web. Here’s a
+straightforward explanation:
 
 ### Resource-Based
 
@@ -45,9 +46,10 @@ REST uses standard HTTP methods to perform actions on these resources. The main 
 
 ### Stateless
 
-Each request from a client to a server must contain all the information needed to understand and process the request. The server doesn’t keep any client information between requests.
+Each request from a client to a server must contain all the information needed to understand and process the request.
+The server doesn’t keep any client information between requests.
 
->This makes each request independent.
+> This makes each request independent.
 
 ### Use of URLs
 
@@ -60,18 +62,21 @@ For example:
 
 ### Client-Server Architecture
 
-The client (like your web browser or mobile app) sends a request to the server (where the website or application is hosted), and the server responds.
->This separation allows each part to evolve independently.
+The client (like your web browser or mobile app) sends a request to the server (where the website or application is
+hosted), and the server responds.
+> This separation allows each part to evolve independently.
 
 ### Representation
 
-When a client requests a resource, the server sends back a representation of that resource. This could be in various formats like `HTML`, `JSON`, or `XML`.
+When a client requests a resource, the server sends back a representation of that resource. This could be in various
+formats like `HTML`, `JSON`, or `XML`.
 
->`JSON` is commonly used because it’s easy for both humans and machines to read.
+> `JSON` is commonly used because it’s easy for both humans and machines to read.
 
 ### Stateless Operations
 
-Each operation (request) is stateless, meaning the server doesn’t store information about previous requests. This makes it easier to scale because each request is processed in isolation.
+Each operation (request) is stateless, meaning the server doesn’t store information about previous requests. This makes
+it easier to scale because each request is processed in isolation.
 
 ## Why the Term "RESTful"?
 
@@ -80,12 +85,12 @@ The term "RESTful" is used to describe services that comply with REST principles
 Here’s why:
 
 - **"REST"**:
-Represents the architectural style and principles.
+  Represents the architectural style and principles.
 
 - **"ful"**:
-Implies that the web services or APIs are full of or adhere completely to REST principles.
+  Implies that the web services or APIs are full of or adhere completely to REST principles.
 
->It denotes that these services make full use of the REST design philosophy.
+> It denotes that these services make full use of the REST design philosophy.
 
 ## API in Simple Terms
 
@@ -107,18 +112,18 @@ REST APIs work similarly, but instead of food, they deal with information on the
 
 - **Resources**: Specific pieces of information, like a user profile, a product listing, or a news article.
 - **Methods**: Different ways you tell the server what to do with the resource:
-- **GET**: Retrieve information (like reading the menu)
-- **POST**: Create new information (like placing your order)
-- **PUT**: Update existing information (like asking for extra cheese)
-- **DELETE**: Remove information (like canceling your order)
+    - **GET**: Retrieve information (like reading the menu)
+    - **POST**: Create new information (like placing your order)
+    - **PUT**: Update existing information (like asking for extra cheese)
+    - **DELETE**: Remove information (like canceling your order)
 - **Server**: Stores the information (resources) and responds to your requests (orders) using the methods.
 - **Response**: The information the server sends back after you make a request.
 
 ## Key Points
 
-**Simple and Universal**: Uses common methods like GET, POST, making it easy for programs to communicate.
-**Flexible**: Allows for retrieving, creating, updating, and deleting information.
-**Web-based**: Works through the internet, enabling communication between different programs and devices.
+- **Simple and Universal**: Uses common methods like GET, POST, making it easy for programs to communicate.
+- **Flexible**: Allows for retrieving, creating, updating, and deleting information.
+- **Web-based**: Works through the internet, enabling communication between different programs and devices.
 
 ## Simple API E2E Flow
 
@@ -144,12 +149,13 @@ Client (User's Application)
 Explanation of the Flow:
 
 1. The Client (user's application) initiates the interaction by sending a Request to the Server.
-  The Request contains three key elements:
-    User Action: What the user wants to do (e.g., view a user profile, create a new user).
-    Method: The type of action being requested (GET, POST, PUT, DELETE).
-    Resource: The specific piece of information being targeted (e.g., users, a specific user ID).
+   The Request contains three key elements:
+    - User Action: What the user wants to do (e.g., view a user profile, create a new user).
+    - Method: The type of action being requested (GET, POST, PUT, DELETE).
+    - Resource: The specific piece of information being targeted (e.g., users, a specific user ID).
 2. The Server receives the Request and interprets it based on the Method and Resource.
-3. The Server accesses the Resource (e.g., retrieves user data from a database) and performs the action specified by the Method.
+3. The Server accesses the Resource (e.g., retrieves user data from a database) and performs the action specified by the
+   Method.
 4. The Server sends a Response back to the Client.
 5. The Response contains the data related to the requested action (e.g., the user profile information).
 6. The Client receives the Response and displays the data to the user (e.g., shows the user profile on the screen).
